@@ -113,7 +113,7 @@ function checkAnswer(input) {
     else{
         wrongAnswers += 1;
     }
-    if (correctAnswers >= 2){
+    if (correctAnswers >= 20){
         clearInterval(timer);
         completeQuiz();
     }
