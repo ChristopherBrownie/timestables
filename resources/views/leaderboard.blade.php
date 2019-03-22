@@ -2,11 +2,11 @@
 
 @section('content')
     <div class="container justify-content-center">
-        <div class="row my-5">
+        <div class="row pt-5">
             <div class="col"></div>
         </div>
         @if(!is_null($player))
-            <div class="row my-5">
+            <div class="row py-5">
                 <div class="col table-responsive">
                     <h5>Your Recent Entry</h5>
                     <table class="table table-sm table-striped">

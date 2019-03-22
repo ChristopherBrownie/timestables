@@ -2,18 +2,19 @@
 
 <!-- start body -->
 @section('content')
-<div class="container justify-content-center h-100">
-    <div class="row h-100 align-items-center">
+<div class="container justify-content-center h-100vh">
+    <div class="row h-100vh align-items-center">
         <!-- WELCOME SECTION (DEFAULT) -->
         <div id="welcome" class="col text-center">
-            <h1 class="display-3">TimesTables</h1>
+            <h1 class="display-3 d-none d-md-block">TimesTables</h1>
+            <h1 class="display-5 d-md-none">TimesTables</h1>
             <h4>Think you know your times tables? Prove it!</h4>
             <button type="button" class="btn btn-primary mt-2">Take the Quiz!</button>
         </div>
         <!-- INSTRUCTIONS SECTION -->
         <div id="starting" class="col d-none text-center">
             <h3 class="display-4">Instructions</h3>
-            <h5>Answer 20 multiplication questions corretly as quickly as you can.</h5>
+            <h5>Answer 20 multiplication questions correctly as quickly as you can.</h5>
             <button class="btn btn-primary mt-2">Begin</button>
         </div>
         <!-- TEST SECTION -->
@@ -43,7 +44,7 @@
             <div class="row mt-2">
                 <div class="col-3 mx-auto">
                     <form name="answerForm" onsubmit="event.preventDefault(); return false;">
-                        <input type="text" name="answer" id="answer" class="form-control" autocomplete="off">
+                        <input type="number" name="answer" id="answer" class="form-control" autocomplete="off">
                         <div class="invalid-feedback">
                             Take a guess!
                         </div>
@@ -66,9 +67,9 @@
                         <span class="text-success">
                             <span id="correct">20</span> correctly
                         </span> in
-                        <strong><span id="timeResult">1:31</span></strong> with
+                        <strong><span id="timeResult"></span></strong> with
                         <span class="text-danger">
-                            <span id="incorrect" class="text-danger">3</span> incorrect
+                            <span id="incorrect" class="text-danger"></span> incorrect
                         </span> answers!
                     </div>
                     <div class="row mt-4">
