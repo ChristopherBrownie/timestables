@@ -6,7 +6,7 @@
             <div class="col"></div>
         </div>
         @if(!is_null($player))
-            <div class="row py-5">
+            <div class="row my-5">
                 <div class="col table-responsive">
                     <h5>Your Recent Entry</h5>
                     <table class="table table-sm table-striped">
@@ -30,7 +30,7 @@
                 </div>
             </div>
         @endif
-        <div class="row">
+        <div class="row my-5">
             <div class="col table-responsive">
                 <h3>Worldwide Leaderboard</h3>
                 <table class="table table-sm table-striped">
